@@ -50,9 +50,6 @@ var server = app.listen(port, () => {
 //socket io configuration
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
-  cors: {
-    origin: "http://localhost:3000",
-  },
 });
 
 //event handling
